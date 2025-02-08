@@ -1,0 +1,19 @@
+name: geopython
+services:
+    jupyter:
+        build: .
+        # restart: unless-stopped
+        environment:
+            - TZ=Europe/Stockholm
+            - PUID=1000
+            - PGID=1000
+        volumes:
+            - ./../:/geopython
+        command: jupyter lab --ip=0.0.0.0 --ServerApp.token='' --ServerApp.root_dir=/geopython
+        ports:
+            - 8888:8888
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "200k"
+                max-file: "10"

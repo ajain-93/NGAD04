@@ -1,0 +1,40 @@
+name: base
+channels:
+  - conda-forge
+dependencies:
+  # Core Python
+  - python=3.10
+
+  # JupyterLab (Stable 3.x version from conda-forge)
+  - jupyterlab=3.6
+  - notebook            # Ensure Jupyter Notebook backend is included
+  - nb_conda            # Allows managing Conda environments in Jupyter
+  - ipywidgets          # Interactive widgets in Jupyter
+
+  # Geospatial stack
+  - fiona=1.8.22
+  - shapely=1.8.*       # Matches Fiona compatibility
+  - geopandas=0.13.*    # Known stable version with Fiona/Shapely
+  - rasterio            # For raster data processing
+  - osmnx               # For working with OpenStreetMap data
+  - pyrosm              # Efficient OSM data parsing
+  - contextily          # Adds basemaps
+  - mapclassify         # Classification for choropleths
+  - geoplot             # High-level plotting for geospatial data
+  - geoviews            # Interactive geospatial visualization
+  - folium              # Leaflet.js maps
+
+  # Analysis and modeling tools
+  - pysal               # Spatial analysis library
+  - scikit-image        # Image processing
+  - scikit-learn        # Machine learning
+  - scikit-mobility     # Mobility analysis
+  - statsmodels         # Statistical modeling
+  - python-igraph       # Network analysis
+
+  # General dependencies
+  - pandas              # Data analysis
+  - matplotlib          # Visualization
+  - seaborn             # Statistical data visualization
+  - scipy               # Scientific computing
+  - networkx            # Graphs and networks
