@@ -1,0 +1,8 @@
+id;name;addr
+1;Gallerian;Hamngatan 37, 111 53 Stockholm
+2; Mall of Scandinavia;Stjärntorget 2, 169 79 Solna
+3; Solna Centrum; Solnavägen 13, 171 45 Solna
+4; Sturegallerian; Sturegatan 4, 114 35 Stockholm
+5; Bromma Blocks; Ulvsundavägen 185, 193, 168 67 Bromma
+6; Bergshamra Centrum; Bergshamravägen 1, 170 72 Solna
+7; Kista Galleria; Hanstavägen 55 F, 164 53 Kista
